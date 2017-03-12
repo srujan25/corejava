@@ -3,10 +3,10 @@ package interview;
 /**
  * Created by SG0221519 on 3/12/2017.
  */
-public class PrintNonRepatedCharacters {
+public class PrintNonRepated {
 
 
-    public void printNonRepatedCharacters(Integer[] array) {
+    public void printNonRepated(Integer[] array) {
         Integer[] nonRepeated = new Integer[array.length];
         Integer[] repeated = new Integer[array.length];
         int repeatedCount = 0;
@@ -53,7 +53,7 @@ public class PrintNonRepatedCharacters {
 
     public static void main(String[] args) {
         Integer array[] = {1,2,1,2,2};
-        PrintNonRepatedCharacters pnrc = new PrintNonRepatedCharacters();
-        pnrc.printNonRepatedCharacters(array);
+        PrintNonRepated pnrc = new PrintNonRepated();
+        pnrc.printNonRepated(array);
     }
 }
