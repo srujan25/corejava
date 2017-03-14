@@ -52,7 +52,7 @@ public class PrintNonRepated {
     }
 
     public static void main(String[] args) {
-        Integer array[] = {1,2,1,2,2};
+        Integer array[] = {1,2,1,2,2,55,44,66,22,666,777,22,33,44,56,66,4,2,3,3,5,67};
         PrintNonRepated pnrc = new PrintNonRepated();
         pnrc.printNonRepated(array);
     }
