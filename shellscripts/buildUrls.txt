@@ -1,0 +1,18 @@
+#!/bin/bash
+allBuilds=`ps -aef|grep 'org.apache.catalina.startup.Bootstrap start'|tr -s ' ' '\n'|grep 'Dcatalina.home'|grep 'cmaxaz'|cut -d '=' -f2|rev|cut -d '/' -f2|rev`
+
+for one_thing in $allBuilds; do
+        port=`cat /project/cmax/home/cmaxaz/$one_thing/conf/catalina.properties|grep http.port|cut -d '=' -f2`
+        webapps=`ls /project/cmax/home/cmaxaz/$one_thing/webapps`
+        for web_one in $webapps;do
+                if [ $web_one == 'ROOT' ]
+                then
+                        continue
+                elif echo "$web_one" | grep -q ".war"
+                then
+                        continue
+                fi
+
+                echo http://$HOSTNAME.sgdcelab.sabre.com:$port/$web_one
+        done
+done
