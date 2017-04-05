@@ -5,7 +5,7 @@ package ds1;
  */
 public class BubbleSortDemo {
 
-    public void bubbleSort(int[] a)
+   /* public void bubbleSort(int[] a)
     {
         for(int i=0;i<a.length;i++)
         {
@@ -20,7 +20,7 @@ public class BubbleSortDemo {
                 }
             }
         }
-    }
+    }*/
 
 
     public void display(int[] a)
@@ -34,7 +34,7 @@ public class BubbleSortDemo {
     public static void main(String[] args) {
         BubbleSortDemo bs = new BubbleSortDemo();
         int a[] = {10,2,4,7,7,3,9};
-        bs.bubbleSort(a);
+      //  bs.bubbleSort(a);
         bs.display(a);
     }
 

@@ -25,7 +25,7 @@ class InExampleSub extends InExamples {
 
     public static void main(String[] args) {
 
-        //1. By using below statement I always get Sub class overridden methods and always get super class variables.
+        //1. By using below statement I always SynchronizedGet Sub class overridden methods and always SynchronizedGet super class variables.
         InExamples ine = new InExampleSub();
         ine.hello();//This is sub hello()
         System.out.println(ine.str);//Super
