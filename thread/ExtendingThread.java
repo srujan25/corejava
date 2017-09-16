@@ -6,7 +6,7 @@ package thread;
 public class ExtendingThread extends Thread{
 
     public void run(){
-        System.out.println("run method in my thread");
+        System.out.println("Thread ---> This is extending thread");
     }
 
     public static void main(String[] args) {

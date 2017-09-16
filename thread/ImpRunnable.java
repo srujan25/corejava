@@ -10,7 +10,7 @@ public class ImpRunnable implements  Runnable{
     public void run()
     {
 
-        System.out.println("run in my Runnable");
+        System.out.println("Thread ---> Implementing Runnable");
     }
 
     public static void main(String[] args) {

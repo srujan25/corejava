@@ -25,20 +25,18 @@ public class BinarySearch {
     }
 
     public int recursive(int start, int end, Integer[] array, int element) {
-        if (start < end) {
-            int mid = start + end / 2;
-
-            if (array[mid] == element)
+        if(end>=start) {
+            int mid = start+(end - start/ 2);
+            if (array[mid] == element) {
                 return mid;
-            if (array[mid] < element) {
-                return recursive(mid, end, array, element);
             }
-            if (array[mid] > element) {
-                return recursive(start, mid, array, element);
+            if (element > array[mid]) {
+                return recursive(mid + 1, end, array, element);
+            } else {
+                return recursive(start, mid - 1, array, element);
             }
-
         }
-        return -(start + 1);
+        return -1;
     }
 
 
@@ -46,7 +44,14 @@ public class BinarySearch {
     public static void main(String[] args) {
         Integer array[] = {1, 2, 3, 4, 5, 6, 7, 8};
         BinarySearch bs = new BinarySearch();
-        bs.binarySearch(array, 4);
-       // bs.recursive(0, array.length - 1, array, 8);
+       bs.binarySearch(array, 8);
+        /*int result = bs.recursive(0, array.length - 1, array, 3);
+        if(result!=-1)
+        {
+            System.out.println("Found at location "+result);
+        }else
+        {
+            System.out.println("Not Found");
+        }*/
     }
 }

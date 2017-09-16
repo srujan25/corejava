@@ -1,7 +1,5 @@
 package inheritance;
 
-import java.net.Inet4Address;
-
 /**
  * Created by SG0221519 on 2/12/2017.
  */
@@ -9,7 +7,7 @@ public class InExamples {
 
     public String str = "Super";
 
-    public void hello() {
+    public void  hello() {
         System.out.println("This is super hello() ");
     }
 }
