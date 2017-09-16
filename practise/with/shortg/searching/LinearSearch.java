@@ -1,4 +1,4 @@
-package practise.with.shortG.Searching;
+package practise.with.shortg.searching;
 
 public class LinearSearch {
 
