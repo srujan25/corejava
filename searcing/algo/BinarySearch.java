@@ -17,16 +17,16 @@ public class BinarySearch {
                 break;
             }
             if (array[mid] < element)
-                start++;
+                start = mid + 1;
             if (array[mid] > element)
-                end--;
+                end = mid - 1;
             totalLoops++;
         }
     }
 
     public int recursive(int start, int end, Integer[] array, int element) {
-        if(end>=start) {
-            int mid = start+(end - start/ 2);
+        if (end >= start) {
+            int mid = start + (end - start / 2);
             if (array[mid] == element) {
                 return mid;
             }
@@ -40,11 +40,10 @@ public class BinarySearch {
     }
 
 
-
     public static void main(String[] args) {
         Integer array[] = {1, 2, 3, 4, 5, 6, 7, 8};
         BinarySearch bs = new BinarySearch();
-       bs.binarySearch(array, 8);
+        bs.binarySearch(array, 5);
         /*int result = bs.recursive(0, array.length - 1, array, 3);
         if(result!=-1)
         {
