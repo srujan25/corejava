@@ -1,7 +1,6 @@
 package practise.with.shortg.searching;
 
 public class JumpSearch {
-
     public static String jumpSearch(int[] inputArray, int jump, int key) {
         int jumpCount = jump;
         for (int i = 0; i <= inputArray.length; i++) {
