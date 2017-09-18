@@ -44,8 +44,9 @@ public class BinarySearch {
         Integer array[] = {1, 2, 3, 4, 5, 6, 7, 8};
         BinarySearch bs = new BinarySearch();
         bs.binarySearch(array, 5);
-        /*int result = bs.recursive(0, array.length - 1, array, 3);
-        if(result!=-1)
+        int result = bs.recursive(0, array.length - 1, array, 3);
+        System.out.println(result);
+        /*if(result!=-1)
         {
             System.out.println("Found at location "+result);
         }else
