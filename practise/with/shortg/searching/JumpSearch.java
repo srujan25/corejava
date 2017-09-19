@@ -28,3 +28,6 @@ public class JumpSearch {
         System.out.println(jumpSearch(inputArray, 4, 0));
     }
 }
+// Best Time complexity is O(1)
+// Worst Time Complexity is O(√n)
+
