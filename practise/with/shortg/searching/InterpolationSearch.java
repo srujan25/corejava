@@ -16,7 +16,7 @@ public class InterpolationSearch {
                 start = pos + 1;
             }
         }
-        return "key didn't find";
+        return "key didn'   t find";
     }
 
     public static void main(String[] args) {
